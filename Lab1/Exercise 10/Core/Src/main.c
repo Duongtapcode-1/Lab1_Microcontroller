@@ -153,7 +153,7 @@ void clearNumberOnClock(int num){
 }
 
 void displayClock(int hour, int minute, int second) {
-    clearAllClock();  // tắt hết LED
+    clearAllClock(); 
 
     int hourLED   = hour % 12;
     int minuteLED = minute / 5;
@@ -266,3 +266,4 @@ void assert_failed(uint8_t *file, uint32_t line)
 #endif /* USE_FULL_ASSERT */
 
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
+
