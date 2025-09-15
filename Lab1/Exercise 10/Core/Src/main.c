@@ -159,13 +159,8 @@ void displayClock(int hour, int minute, int second) {
     int minuteLED = minute / 5;
     int secondLED = second / 5;
 
-    // bật LED cho giờ
     HAL_GPIO_WritePin(GPIOA, ledRED[hourLED], GPIO_PIN_RESET);
-
-    // bật LED cho phút
     HAL_GPIO_WritePin(GPIOA, ledRED[minuteLED], GPIO_PIN_RESET);
-
-    // bật LED cho giây
     HAL_GPIO_WritePin(GPIOA, ledRED[secondLED], GPIO_PIN_RESET);
 }
 
