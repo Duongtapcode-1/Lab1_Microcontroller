@@ -123,7 +123,7 @@ int main(void)
 	     if(hour >= 24) {
 	         hour = 0;
 	     }
-/*------------------------------------Exercise 6-----------------------------------------*/
+/*------------------------------Exercise 6----------------------------------*/
 //	  for(int i = 0; i < 12; i++){
 //
 //		  HAL_GPIO_WritePin (GPIOA, ledRED[i], GPIO_PIN_RESET);
@@ -270,5 +270,6 @@ void assert_failed(uint8_t *file, uint32_t line)
 #endif /* USE_FULL_ASSERT */
 
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
+
 
 
