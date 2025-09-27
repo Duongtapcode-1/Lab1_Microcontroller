@@ -123,6 +123,7 @@ int main(void)
 	     if(hour >= 24) {
 	         hour = 0;
 	     }
+/*------------------------------------Exercise 6-----------------------------------------*/
 //	  for(int i = 0; i < 12; i++){
 //
 //		  HAL_GPIO_WritePin (GPIOA, ledRED[i], GPIO_PIN_RESET);
@@ -134,19 +135,22 @@ int main(void)
   }
   /* USER CODE END 3 */
 }
+/*------------------------------Exercise 7-----------------------------------*/
 void clearAllClock() {
     HAL_GPIO_WritePin(GPIOA, LED_1_Pin|LED_2_Pin|LED_3_Pin|LED_4_Pin
                             |LED_5_Pin|LED_6_Pin|LED_7_Pin|LED_8_Pin
                             |LED_9_Pin|LED_10_Pin|LED_11_Pin|LED_12_Pin,
                             GPIO_PIN_SET);
 }
-
+/*------------------------------Exercise 8------------------------------------*/
 void setNumberOnClock (int num){
 	if(num < 0 || num >= 12) return;
 	clearAllClock();
 
 	HAL_GPIO_WritePin (GPIOA, ledRED[num], GPIO_PIN_RESET);
 }
+
+/*------------------------------Exercise 9------------------------------------*/
 void clearNumberOnClock(int num){
 	if(num < 0 || num >= 12) return;
 	HAL_GPIO_WritePin(GPIOA, ledRED[num], GPIO_PIN_SET);
@@ -266,4 +270,5 @@ void assert_failed(uint8_t *file, uint32_t line)
 #endif /* USE_FULL_ASSERT */
 
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
+
 
